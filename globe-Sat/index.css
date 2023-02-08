@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+div.nav-item a.nav-link {
+    font-size: 14px;
+    margin: 0px 5px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    transition: .4s;
+}
+
+div.nav-item:nth-child(1) a.nav-link {
+    color: blue;
+}
+
+div.nav-item a.nav-link:hover {
+    transform: translate(-0px , -5px);
+    color: blue;
+}

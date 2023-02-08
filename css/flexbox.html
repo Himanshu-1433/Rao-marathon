@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./flexbox.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Num_disp"> 
+        
+    </div>
+    <div class="flex-container">
+        <button class="flex-items" onclick="disp(this)" value="1">1</button>
+        <button class="flex-items" onclick="disp(this)" value="2">2</button>
+        <button class="flex-items" onclick="disp(this)" value="3">3</button>
+        <button class="flex-items" onclick="disp(this)" value="4">4</button>
+        <button class="flex-items" onclick="disp(this)" value="5">5</button>
+        <button class="flex-items" onclick="disp(this)" value="6">6</button>
+        <button class="flex-items" onclick="disp(this)" value="7">7</button>
+        <button class="flex-items" onclick="disp(this)" value="8">8</button>
+        <button class="flex-items" onclick="disp(this)" value="9">9</button>
+        <button class="flex-items" onclick="disp(this)" value="10">10</button>
+    </div>
+   
+    <script>
+        function disp(val) {
+            // document.write(val.innerText);
+            let div = document.createElement("div");
+            div.textContent = val.innerText;
+            const box = document.getElementById("Num_disp");
+            box.appendChild(div);
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green);
+  animation-name: example;
+  animation-duration: 60s;
+  trasition: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+</style>
+</head>
+<body>
+
+<h1>Conic Gradient - Three Colors</h1>
+
+<div id="grad1"></div>
+
+</body>
+</html>
+
+
+ -->
