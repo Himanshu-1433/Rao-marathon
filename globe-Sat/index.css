@@ -4,9 +4,9 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-}
+} 
 
-.navbar {
+.navbar { 
     display: flex;
     align-items: center;
     justify-content: space-between;
