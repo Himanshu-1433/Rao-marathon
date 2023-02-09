@@ -92,7 +92,7 @@ main section:nth-child(2) div.text-center a:hover {
     text-decoration: none;
 }
 
-main section:nth-child(4) .row .col-7 .card{ 
+main section:nth-child(4) .row .col-6 .card {
     position: absolute;
     border: none;
     width: 80%;
@@ -101,4 +101,16 @@ main section:nth-child(4) .row .col-7 .card{
     border-top-right-radius: 10px;
     padding: 10px;
     bottom: 0px;
+}
+
+main section:nth-child(4) .row .col-6 .card .card-body {
+    font-size: 15px;
+}
+
+main section:nth-child(4) .row .col-6:nth-child(2) {
+    height: 100px;
+}
+
+main section:nth-child(4) .row .col-6 .box img {
+    height: 100px;
 }
