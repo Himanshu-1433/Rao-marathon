@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
 * {
     padding: 0px;
@@ -44,9 +45,9 @@ div.nav-item a.nav-link:hover {
     line-height: 95%;
     font-family: 'Kanit', sans-serif;
     animation: effect;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
-    transition: 1s;
+    transition: .5s;
 }
 
 @keyframes effect {
@@ -79,23 +80,43 @@ main .container .d-flex .position-relative:nth-child(2) {
     text-transform: capitalize;
 }
 
-main section:nth-child(2) div.text-center a i {
-    font-size: 12px;
-    margin-left: 10px;
-}
-
 main section:nth-child(2) div.text-center a {
     font-size: 13px;
 }
 
-main section:nth-child(2) div.text-center a:hover {
+a.text-primary::after {
+    content: '\f04b';
+    margin: 5px;
+    font: var(--fa-font-solid);
+    transition: .4s;
+}
+
+a.text-primary:hover::after {
+    margin: 8px;
+}
+
+main section:nth-child(2) div.text-center a.text-primary:hover {
     text-decoration: none;
 }
 
-main section:nth-child(4) .row .col-6 .card {
+main section:nth-child(4) .row .col-lg-7 .card .card-body a::after,
+main section:nth-child(4) .row .col-lg-5 .card .card-body a::after {
+    content: '\f04b';
+    margin: 5px;
+    font: var(--fa-font-solid);
+    transition: .4s;
+}
+
+main section:nth-child(4) .row .col-lg-7 .card .card-body a:hover::after,
+main section:nth-child(4) .row .col-lg-5 .card .card-body a:hover::after {
+    margin: 8px;
+}
+
+main section:nth-child(4) .row .col-lg-7 .card {
     position: absolute;
     border: none;
-    width: 80%;
+    width: 70%;
+    text-decoration: none;
     font-size: 20px;
     border-radius: 0px;
     border-top-right-radius: 10px;
@@ -103,14 +124,58 @@ main section:nth-child(4) .row .col-6 .card {
     bottom: 0px;
 }
 
-main section:nth-child(4) .row .col-6 .card .card-body {
+main section:nth-child(4) .row .col-lg-7 img {
+    width: 100%;
+    height: 500px;
+}
+
+main section:nth-child(4) .row .col-lg-5 .box {
+    margin-bottom: 15px;
+}
+
+main section:nth-child(4) .row .col-lg-5 .card {
+    position: absolute;
+    border: none;
+    width: 80%;
+    height: 50%;
+    font-size: 15px;
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    bottom: 0px;
+}
+
+main section:nth-child(4) .row .col-lg-7 .card .card-body {
     font-size: 15px;
 }
 
-main section:nth-child(4) .row .col-6:nth-child(2) {
-    height: 100px;
+main section:nth-child(4) .row .col-lg-5 .box img {
+    height: 246px;
+    width: 100%;
 }
 
-main section:nth-child(4) .row .col-6 .box img {
+section.container:nth-child(5) {
+    position: relative;
+}
+
+footer {
+    background-color: black;
     height: 100px;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer div {
+    margin: 40px 10px;
+    text-align: center;
+}
+
+footer div span:nth-child(1)::after ,
+footer div span:nth-child(2)::after ,
+footer div span:nth-child(3)::after 
+{
+    content: '|';
+    margin: 0px 10px;
 }
