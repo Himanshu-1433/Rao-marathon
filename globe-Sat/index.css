@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     padding: 0px;
@@ -8,10 +9,26 @@
     box-sizing: border-box;
 }
 
+/* for all hr */
+hr {
+    position: relative;
+    height: 0px;
+    width: 100%;
+    z-index: 1;
+    padding: 0px;
+    background: #80808029;
+}
+
+/* navbar start */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+
+nav.navbar.navbar-expand-lg.bg-light.text-dark.align-items-center {
+    margin: 0px 0px -20px 0px;
 }
 
 div.nav-item a.nav-link {
@@ -26,11 +43,19 @@ div.nav-item:nth-child(1) a.nav-link {
     color: blue;
 }
 
+.d-flex.align-items-center {
+    margin: 50px 0px 50px 0px;
+}
+
 div.nav-item a.nav-link:hover {
     transform: translate(-0px, -5px);
     color: blue;
 }
 
+/* navbar over */
+
+
+/* main section-1 start */
 .Image-over-txt {
     position: absolute;
     bottom: 15px;
@@ -76,14 +101,33 @@ div.nav-item a.nav-link:hover {
     }
 }
 
-main .container .d-flex .position-relative:nth-child(2) {
-    text-transform: capitalize;
+section:nth-child(1) .d-flex .col-lg-4 p {
+    font-size: 18px;
+    line-height: 1.9;
+    text-transform: uppercase;
+    word-spacing: 2.70px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #483d3ddb;
 }
 
-main section:nth-child(2) div.text-center a {
+/* main section-1 over */
+
+
+/* main section-2 start */
+
+section:nth-child(2) div.text-center a {
     font-size: 13px;
 }
 
+.text-center.mx-5.px-5 {
+    margin: 40px 0px;
+}
+
+/* main section-2 over */
+
+
+/* play icon setting  */
 a.text-primary::after {
     content: '\f04b';
     margin: 5px;
@@ -95,24 +139,25 @@ a.text-primary:hover::after {
     margin: 8px;
 }
 
-main section:nth-child(2) div.text-center a.text-primary:hover {
-    text-decoration: none;
-}
-
-main section:nth-child(4) .row .col-lg-7 .card .card-body a::after,
-main section:nth-child(4) .row .col-lg-5 .card .card-body a::after {
+section:nth-child(3) .row .col-lg-7 .card .card-body a::after,
+section:nth-child(3) .row .col-lg-5 .card .card-body a::after {
     content: '\f04b';
     margin: 5px;
     font: var(--fa-font-solid);
     transition: .4s;
 }
 
-main section:nth-child(4) .row .col-lg-7 .card .card-body a:hover::after,
-main section:nth-child(4) .row .col-lg-5 .card .card-body a:hover::after {
+section:nth-child(3) .row .col-lg-7 .card .card-body a:hover::after,
+section:nth-child(3) .row .col-lg-5 .card .card-body a:hover::after {
     margin: 8px;
 }
 
-main section:nth-child(4) .row .col-lg-7 .card {
+/* play icon setting over */
+
+
+/* section 3 */
+
+.col-lg-7.position-relative .card {
     position: absolute;
     border: none;
     width: 70%;
@@ -124,16 +169,16 @@ main section:nth-child(4) .row .col-lg-7 .card {
     bottom: 0px;
 }
 
-main section:nth-child(4) .row .col-lg-7 img {
+.col-lg-7.position-relative img {
     width: 100%;
     height: 500px;
 }
 
-main section:nth-child(4) .row .col-lg-5 .box {
+.col-lg-5.position-relative .box {
     margin-bottom: 15px;
 }
 
-main section:nth-child(4) .row .col-lg-5 .card {
+.col-lg-5.position-relative .box .card {
     position: absolute;
     border: none;
     width: 80%;
@@ -145,19 +190,19 @@ main section:nth-child(4) .row .col-lg-5 .card {
     bottom: 0px;
 }
 
-main section:nth-child(4) .row .col-lg-7 .card .card-body {
+.col-lg-7.position-relative .box .card .card-body {
     font-size: 15px;
 }
 
-main section:nth-child(4) .row .col-lg-5 .box img {
+.col-lg-5.position-relative .box img {
     height: 246px;
     width: 100%;
 }
 
-section.container:nth-child(5) {
-    position: relative;
-}
+/* section 3 over */
 
+
+/* footer */
 footer {
     background-color: black;
     height: 100px;
@@ -172,10 +217,11 @@ footer div {
     text-align: center;
 }
 
-footer div span:nth-child(1)::after ,
-footer div span:nth-child(2)::after ,
-footer div span:nth-child(3)::after 
-{
+footer div span:nth-child(1)::after,
+footer div span:nth-child(2)::after,
+footer div span:nth-child(3)::after {
     content: '|';
     margin: 0px 10px;
 }
+
+/* footer over */
